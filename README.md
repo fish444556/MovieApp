@@ -18,4 +18,5 @@ Delete the "--host 141.219.243.240" in package.json
 
 ## Result
 
-![capture](https://user-images.githubusercontent.com/19919389/28477030-401c42b2-6e20-11e7-8f56-163b5172176a.PNG)
+
+![capture](https://user-images.githubusercontent.com/19919389/28481435-e9c2c036-6e32-11e7-9f22-88e35a378c5d.PNG)
