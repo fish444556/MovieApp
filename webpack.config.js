@@ -15,9 +15,18 @@ module.exports = {
     inline: true,
     contentBase: './',
 
-    //Without this, it showed Cannot GET /home when refresh
+    //Without this, it showed "Cannot GET /home" when refresh
     historyApiFallback: true,
+
+    proxy: {
+      '/v4/api/*': {
+        target: 'http://m.maizuo.com',
+        host: 'm.maizuo.com',
+        changeOrigin: true
+      }
+    }
   },
+
   module: {
     loaders: [
       {
