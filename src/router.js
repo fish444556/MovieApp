@@ -10,9 +10,9 @@ import {
 
 import Main from "./components/Main/Main";
 import Home from "./components/Home/Home";
-import Film from "./components/Film/Film";
 import NowPlaying from "./components/NowPlaying/NowPlaying";
 import Coming from "./components/Coming/Coming";
+import Film from "./components/Film/Film";
 
 const router = (
   <Router>

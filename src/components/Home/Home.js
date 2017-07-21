@@ -14,7 +14,6 @@ class Home extends React.Component {
   }
 
   componentWillMount() {
-    console.log(this.state.dataList.length)
     axios.get('/v4/api/billboard/home').then(res => {
       if (res.data.data.billboards) {
         this.setState({
