@@ -1,0 +1,29 @@
+.Detail {
+  img {
+    width: 100%;
+  }
+
+  .film-intro {
+
+    .film-w1 {
+      margin: 16px auto;
+      border-left: 16px solid rgb(228, 200, 156);
+      font-size: 16px;
+      padding-left: 4px;
+    }
+
+    .film-w2 {
+      height: 18px;
+      overflow: hidden;
+      margin-bottom: 10px;
+      padding-left: 20px;
+    }
+
+    .film-w3 {
+      text-overflow: ellipsis;
+      margin-bottom: 80px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}

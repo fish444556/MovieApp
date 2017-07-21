@@ -13,6 +13,7 @@ import Home from "./components/Home/Home";
 import NowPlaying from "./components/NowPlaying/NowPlaying";
 import Coming from "./components/Coming/Coming";
 import Film from "./components/Film/Film";
+import Detail from "./components/Detail/Detail";
 
 const router = (
   <Router>
@@ -28,6 +29,7 @@ const router = (
             </Switch>
           </Film>
         } />
+        <Route path="/detail/:movieId" component={Detail} />
       </Switch>
       <Redirect from="/" to="/home" />
     </Main>
