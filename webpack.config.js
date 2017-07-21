@@ -10,6 +10,14 @@ module.exports = {
     publicPath: '/dist/',
     filename: '[name].bundle.js',
   },
+  devServer: {
+    port: '9999',
+    inline: true,
+    contentBase: './',
+
+    //Without this, it showed Cannot GET /home when refresh
+    historyApiFallback: true,
+  },
   module: {
     loaders: [
       {
@@ -18,6 +26,21 @@ module.exports = {
         loader: 'babel-loader',
         query: {
           presets: ['es2015', 'react']
+        }
+      },
+      {
+        test: /\.css$/,
+        loader: 'style-loader!css-loader'
+      },
+      {
+        test: /\.scss$/,
+        loader: 'style-loader!css-loader!sass-loader'
+      },
+      {
+        test: /\.(eot|svg|ttf|woff|woff2)(\?\S*)?$/,
+        loader: 'file-loader',
+        options: {
+          name: 'fonts/[name].[ext]?[hash]' //目标文件夹
         }
       },
     ]

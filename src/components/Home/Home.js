@@ -1,5 +1,7 @@
 import React from 'react'
-
+import ReactSwipe from 'react-swipe'
+import axios from 'axios'
+// import '../../assets/Movies/common.scss'
 
 
 class Home extends React.Component {
@@ -12,7 +14,7 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        I am home.
+        I am home.  1111111
       </div>
     )
   }

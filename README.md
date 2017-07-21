@@ -2,6 +2,10 @@
 
 This is a project to mimic Maizuo mobile web using React.
 
+### Reference
+
+https://github.com/liupeijun/react-router-v4-maizuo
+
 ## Installation
 
 `npm i`
